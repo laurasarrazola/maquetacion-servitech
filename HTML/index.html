@@ -24,23 +24,24 @@
   </head>
 
   <body>
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg">
+    <!-- header -->
+    <header class="header sticky-top">
+      <nav class="header__navbar navbar navbar-expand-lg">
         <div
-          class="container-fluid d-flex justify-content-around align-items-center"
+          class="header__container container-fluid d-flex justify-content-around align-items-center"
         >
           <!-- Logo -->
-          <a href="#index.html">
+          <a href="#index.html" class="logo">
             <img
               src="/assets/LOGO-SERVITECH-DARKMODE.png"
               alt="Ir a la página principal de Servitech"
-              class="logo"
+              class="logo__image"
             />
           </a>
 
           <!-- Botón para dispositivos móviles -->
           <button
-            class="navbar-toggler navbar-dark"
+            class="navbar-toggler navbar-dark header__menu-toggle"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -53,177 +54,187 @@
 
           <!-- menú de navegación -->
           <div
-            class="collapse navbar-collapse justify-content-between align-items-center w-100"
+            class="collapse navbar-collapse justify-content-between align-items-center w-100" 
             id="navbarNav"
           >
-            <ul class="navbar-nav mx-auto d-flex justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Inicio</a>
+            <ul class="header__nav-list navbar-nav mx-auto d-flex justify-content-center">
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Expertos</a>
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">Expertos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">Contacto</a>
               </li>
             </ul>
           </div>
-          <div class="btn-container d-flex gap-2">
-          <!-- Botones de Iniciar sesión y registrarse-->
-          <button type="button" class="btn cta-btn">Iniciar sesión</button>
-          <button type="button" class="btn sec-btn">Registrarse</button>
+          
+          <!-- Botones -->
+          <div class="d-flex gap-2 header__actions">
+            
+          <button type="button" class=" btn btn--cta">Iniciar sesión</button>
+          <button type="button" class=" btn btn--secondary">Registrarse</button>
           </div>
       </nav>
     </header>
 
     <!-- Sección informativa -->
-    <div class="text-container">
-      <main class="startup">
-        <h2 class="sign-up-text">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+        <h2 class="hero__title">
           Regístrate gratis para aprender con nuestros expertos en informática.
           Realiza asesorías y empieza a ganar dinero. Decides cuánto y cuándo
         </h2>
 
-        <div class="startup-roles">
-          <p>
+        <div class="hero__roles">
+          <p class="hero__description">
             Busca profesionales de cualquier temática de informática y
             contrátalos para que te ayuden y guíen de forma personalizada y
             totalmente privada.
           </p>
-          <p>
+          <p class="hero__description">
             Como experto podrás ofrecer tus conocimientos en distintas áreas a
             través de videollamadas privadas y ganarás dinero enseñando.
           </p>
+          </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </section>
 
     <div class="yellow-line"></div>
 
-  <!-- Cartas donde se presentan algunas temáticas -->
-<main class="first-cards-section">
-  <section class="cards-section">
-    <article class=" card start-cards rounded-5 overflow-hidden" style="width: 17rem">
-      <div class="card-body">
-        <h5 class="card-title"><strong> Desarrollo Frontend </strong> </h5>
-        <ul>
-        <li class="ms-0">Lenguajes básicos</li>
-        <li class="ms-0">Frameworks y librerías</li>
-        <li class="ms-0">Diseño responsivo</li>
-        <li class="ms-0">Consumo de APIs</li>
-        <li class="ms-0">Control de estado</li>
-        <li class="ms-0">Herramientas de desarrollo</li>
-        <li class="ms-0">y más...</li>
-        </ul>
-      </div>
-    </article>
+  <!-- Sección donde se presentan algunas temáticas -->
+<section class="topics">
+  <div class="container py-5">
+    <div class="topics__cards">
 
-    <article class="card start-cards rounded-5 overflow-hidden" style="width: 17rem">
+      <article class="topics__card card rounded-5 overflow-hidden">
       <div class="card-body">
-        <h5 class="card-title"><strong>Desarrollo Backend</strong></h5>
-        <ul>
-          <li class="ms-0">Bases de datos</li>
-          <li class="ms-0">APIs y servidores</li>
-          <li class="ms-0">Autenticación</li>
-          <li class="ms-0">Seguridad</li>
-          <li class="ms-0">Escalabilidad</li>
-          <li class="ms-0">y más...</li>
+        <h5 class="topics__title card-title"><strong> Desarrollo Frontend </strong> </h5>
+        <ul class="topics__list">
+        <li class="topics__item">Frameworks</li>
+        <li class="topics__item">librerias</li>
+        <li class="topics__item">Diseño responsivo</li>
+        <li class="topics__item">Consumo de APIs</li>
+        <li class="topics__item">Control de estado</li>
+        <li class="topics__item">y más...</li>
         </ul>
       </div>
-    </article>
+      </article>
 
-    <article class="card start-cards rounded-5 overflow-hidden" style="width: 17rem">
+      <article class="topics__card card rounded-5 overflow-hidden">
       <div class="card-body">
-        <h5 class="card-title"><strong>DevOps</strong></h5>
-        <ul>
-          <li class="ms-0">CI/CD</li>
-          <li class="ms-0">Docker y Kubernete</li>
-          <li class="ms-0">Cloud Computing</li>
-          <li class="ms-0">Monitoreo</li>
-          <li class="ms-0">y más...</li>
+        <h5 class="topics__title card-title"><strong>Desarrollo Backend</strong></h5>
+        <ul class="topics__list">
+          <li class="topics__item">Bases de datos</li>
+          <li class="topics__item">APIs y servidores</li>
+          <li class="topics__item">Autenticación</li>
+          <li class="topics__item">Seguridad</li>
+          <li class="topics__item">Escalabilidad</li>
+          <li class="topics__item">y más...</li>
         </ul>
       </div>
-    </article>
+      </article>
 
-    <article class="card start-cards rounded-5 overflow-hidden" style="width: 17rem">
+      <article class="topics__card card rounded-5 overflow-hidden">
       <div class="card-body">
-        <h5 class="card-title"><strong>Diseño UX/UI</strong></h5>
-        <ul>
-          <li class="ms-0">Wireframing</li>
-          <li class="ms-0">User Testing</li>
-          <li class="ms-0">Prototipado</li>
-          <li class="ms-0">Accesibilidad</li>
-          <li class="ms-0">y más...</li>
+        <h5 class="topics__title card-title"><strong>DevOps</strong></h5>
+        <ul class="topics__list">
+          <li class="topics__item">CI/CD</li>
+          <li class="topics__item">Docker y Kubernete</li>
+          <li class="topics__item">Cloud Computing</li>
+          <li class="topics__item">Monitoreo</li>
+          <li class="topics__item">y más...</li>
         </ul>
       </div>
-    </article>
-  </section>
-</main>
+      </article>
+
+      <article class="topics__card card rounded-5 overflow-hidden" style="width: 17rem">
+      <div class="card-body">
+        <h5 class="topics__title card-title"><strong>Diseño UX/UI</strong></h5>
+        <ul class="topics__list"> 
+          <li class="topics__item">Wireframing</li>
+          <li class="topics__item">User Testing</li>
+          <li class="topics__item">Prototipado</li>
+          <li class="topics__item">Accesibilidad</li>
+          <li class="topics__item">y más...</li>
+        </ul>
+      </div>
+      </article>
+
+
+    </div>
+  </div>
+</section>
+
 
 <!-- logo y mensaje entre cards -->
-<section class="logo-section">
-    <img src="/assets/LOGO-SERVITECH-DARKMODE.png" alt="Logo Servitech tema oscuro" class="logo">
+<section class="landing__logo-section">
+    <img src="/assets/LOGO-SERVITECH-DARKMODE.png" alt="Logo Servitech tema oscuro" class="landing__logo-img">
     <h3>- Asesorías privadas 1 a 1 -</h3>
     <h3>Plataforma de aprendizaje digital </h3>
 </section>
 
 
 <!-- cartas beneficios -->
-<section class="benefit-cards">
-<main class="cards-container">
-  <div class="card">
-    <img src="/assets/videollamadas-privadas.png" alt="Silueta de Computador con fondo amarillo" class="cards-illustrations">
-    <h5 class="card-title"><strong>Videollamadas privadas</strong></h5>
-    <p class="card-text">Reúnete con tu asesor personal en la plataforma que más te guste como Meet o Teams.</p>
+<section class="benefits">
+<div class="benefits__cards-container">
+
+  <div class="card benefits__card">
+    <img src="/assets/videollamadas-privadas.png" alt="Silueta de Computador con fondo amarillo" class="benefits__card-img">
+    <h5 class="benefits__card-title card-title"><strong>Videollamadas privadas</strong></h5>
+    <p class="benefits__card-text card-text">Reúnete con tu asesor personal en la plataforma que más te guste como Meet o Teams.</p>
   </div>
 
   <div class="card">
-    <img src="/assets/soporte-247.png" alt="Silueta de persona con fondo amarillo" class="cards-illustrations">
-    <h5 class="card-title"><strong>Soporte 24/7</strong></h5>
-    <p class="card-text">Disponemos de soporte los 7 días de la semana.</p>
+    <img src="/assets/soporte-247.png" alt="Silueta de persona con fondo amarillo" class="benefits__card-img">
+    <h5 class="benefits__card-title card-title"><strong>Soporte 24/7</strong></h5>
+    <p class="benefits__card-text card-text">Disponemos de soporte los 7 días de la semana.</p>
   </div>
 
   <div class="card">
-    <img src="/assets/pagos-seguros.png" alt="Silueta de manos con bolsa de dinero con fondo amarillo" class="cards-illustrations">
-    <h5 class="card-title"><strong>Pagos seguros</strong></h5>
-    <p class="card-text">Todos los pagos se realizan por pasarelas seguras.</p>
+    <img src="/assets/pagos-seguros.png" alt="Silueta de manos con bolsa de dinero con fondo amarillo" class="benefits__card-img">
+    <h5 class="benefits__card-title card-title"><strong>Pagos seguros</strong></h5>
+    <p class="benefits__card-text card-text">Todos los pagos se realizan por pasarelas seguras.</p>
   </div>
 
   <div class="card">
-    <img src="/assets/formacion-calidad.png" alt="Silueta de manos con bolsa de dinero con fondo amarillo" class="cards-illustrations">
-    <h5 class="card-title"><strong>Formación de calidad</strong></h5>
-    <p class="card-text">Cada asesoría se valora recíprocamente por la comunidad.</p>
+    <img src="/assets/formacion-calidad.png" alt="Silueta de manos con bolsa de dinero con fondo amarillo" class="benefits__card-img">
+    <h5 class="benefits__card-title card-title"><strong>Formación de calidad</strong></h5>
+    <p class="benefits__card-text card-text">Cada asesoría se valora recíprocamente por la comunidad.</p>
   </div>
-</main>
+</div>
 </section>
 
 
 <!-- footer -->
- <div class="container">
-  <footer class=" pt-5">
-    <div class="footer row">
+<div class="container">
+  <footer class="footer pt-5">
+    <div class="footer__content row">
       
 
-      <div class="col-6 col-md-2 mb-3">
-        <h5>LEGAL</h5>
+      <div class="footer__section col-6 col-md-4 mb-4">
+        <h5 class="footer__heading">LEGAL</h5>
         <ul class="nav flex-column">
-          <li class="nav-item"><a href="#" class="footer-text p-0 ms-0">Condiciones de uso</a></li>
-          <li class="nav-item"><a href="#" class="footer-text p-0 ms-0"> Política de privacidad</a></li>
-          <li class=" nav-item mb-2"><a href="#" class="footer-text p-0 ms-0"> Política de cookies</a></li>
+          <li class="nav-item"><a href="#" class="footer__link p-0 ms-0">Condiciones de uso</a></li>
+          <li class="nav-item"><a href="#" class="footer__link p-0 ms-0"> Política de privacidad</a></li>
+          <li class=" nav-item mb-2"><a href="#" class="footer__link p-0 ms-0"> Política de cookies</a></li>
         </ul>
       </div>
 
-      <div class="col-6 col-md-2 mb-3">
-        <h5>SOPORTE</h5>
+      <div class="footer__section col-6 col-md-2 mb-3">
+        <h5 class="footer__heading">SOPORTE</h5>
         <ul class="nav flex-column">
-          <li class="nav-item"><a href="#" class=" footer-text p-0 ms-0">Preguntas frecuentes</a></li>
-          <li class=" nav-item mb-2"><a href="#" class="footer-text p-0 ms-0">Contactar</a></li>
+          <li class="nav-item"><a href="#" class="footer__link p-0 ms-0">Preguntas frecuentes</a></li>
+          <li class=" nav-item mb-2"><a href="#" class="footer__link p-0 ms-0">Contactar</a></li>
         </ul>
       </div>
 
     </div>
 
-    <div class="d-flex flex-column flex-sm-row justify-content-between  ">
+    <div class="footer__copyright d-flex flex-column flex-sm-row justify-content-between  ">
       <p>&copy; 2025 Orange. Todos los derechos reservados.</p>
     </div>
   </footer>
