@@ -30,12 +30,11 @@
           class="container-fluid d-flex justify-content-around align-items-center"
         >
           <!-- Logo -->
-          <a class="navbar-brand" href="#index.html">
+          <a href="#index.html">
             <img
               src="/assets/LOGO-SERVITECH-DARKMODE.png"
               alt="Ir a la página principal de Servitech"
-              class="img-fluid"
-              wudth="80%"
+              class="logo"
             />
           </a>
 
@@ -102,19 +101,19 @@
     <div class="yellow-line"></div>
 
   <!-- Cartas donde se presentan algunas temáticas -->
-<main class="cards-section">
-  <section class="cards-section my-5">
+<main class="first-cards-section">
+  <section class="cards-section">
     <article class=" card start-cards rounded-5 overflow-hidden" style="width: 17rem">
       <div class="card-body">
         <h5 class="card-title"><strong> Desarrollo Frontend </strong> </h5>
         <ul>
-        <li class="card-link ms-0">Lenguajes básicos</li>
-        <li class="card-link ms-0">Frameworks y librerías</li>
-        <li class="card-link ms-0">Diseño responsivo</li>
-        <li class="card-link ms-0">Consumo de APIs</li>
-        <li class="card-link ms-0">Control de estado</li>
-        <li class="card-link ms-0">Herramientas de desarrollo</li>
-        <li class="card-link ms-0">y más...</li>
+        <li class="ms-0">Lenguajes básicos</li>
+        <li class="ms-0">Frameworks y librerías</li>
+        <li class="ms-0">Diseño responsivo</li>
+        <li class="ms-0">Consumo de APIs</li>
+        <li class="ms-0">Control de estado</li>
+        <li class="ms-0">Herramientas de desarrollo</li>
+        <li class="ms-0">y más...</li>
         </ul>
       </div>
     </article>
@@ -123,12 +122,12 @@
       <div class="card-body">
         <h5 class="card-title"><strong>Desarrollo Backend</strong></h5>
         <ul>
-          <li class="card-link ms-0">Bases de datos</li>
-          <li class="card-link ms-0">APIs y servidores</li>
-          <li class="card-link ms-0">Autenticación</li>
-          <li class="card-link ms-0">Seguridad</li>
-          <li class="card-link ms-0">Escalabilidad</li>
-          <li class="card-link ms-0">y más...</li>
+          <li class="ms-0">Bases de datos</li>
+          <li class="ms-0">APIs y servidores</li>
+          <li class="ms-0">Autenticación</li>
+          <li class="ms-0">Seguridad</li>
+          <li class="ms-0">Escalabilidad</li>
+          <li class="ms-0">y más...</li>
         </ul>
       </div>
     </article>
@@ -137,11 +136,11 @@
       <div class="card-body">
         <h5 class="card-title"><strong>DevOps</strong></h5>
         <ul>
-          <li class="card-link ms-0">CI/CD</li>
-          <li class="card-link ms-0">Docker y Kubernete</li>
-          <li class="card-link ms-0">Cloud Computing</li>
-          <li class="card-link ms-0">Monitoreo</li>
-          <li class="card-link ms-0">y más...</li>
+          <li class="ms-0">CI/CD</li>
+          <li class="ms-0">Docker y Kubernete</li>
+          <li class="ms-0">Cloud Computing</li>
+          <li class="ms-0">Monitoreo</li>
+          <li class="ms-0">y más...</li>
         </ul>
       </div>
     </article>
@@ -150,54 +149,85 @@
       <div class="card-body">
         <h5 class="card-title"><strong>Diseño UX/UI</strong></h5>
         <ul>
-          <li class="card-link ms-0">Wireframing</li>
-          <li class="card-link ms-0">User Testing</li>
-          <li class="card-link ms-0">Prototipado</li>
-          <li class="card-link ms-0">Accesibilidad</li>
-          <li class="card-link ms-0">y más...</li>
+          <li class="ms-0">Wireframing</li>
+          <li class="ms-0">User Testing</li>
+          <li class="ms-0">Prototipado</li>
+          <li class="ms-0">Accesibilidad</li>
+          <li class="ms-0">y más...</li>
         </ul>
       </div>
     </article>
   </section>
 </main>
 
+<!-- logo y mensaje entre cards -->
+<section class="logo-section">
+    <img src="/assets/LOGO-SERVITECH-DARKMODE.png" alt="Logo Servitech tema oscuro" class="logo">
+    <h3>- Asesorías privadas 1 a 1 -</h3>
+    <h3>Plataforma de aprendizaje digital </h3>
+</section>
 
-<!-- Cartas donde se presentan beneficios -->
+
+<!-- cartas beneficios -->
+<section class="benefit-cards">
+<main class="cards-container">
+  <div class="card">
+    <img src="/assets/videollamadas-privadas.png" alt="Silueta de Computador con fondo amarillo" class="cards-illustrations">
+    <h5 class="card-title"><strong>Videollamadas privadas</strong></h5>
+    <p class="card-text">Reúnete con tu asesor personal en la plataforma que más te guste como Meet o Teams.</p>
+  </div>
+
+  <div class="card">
+    <img src="/assets/soporte-247.png" alt="Silueta de persona con fondo amarillo" class="cards-illustrations">
+    <h5 class="card-title"><strong>Soporte 24/7</strong></h5>
+    <p class="card-text">Disponemos de soporte los 7 días de la semana.</p>
+  </div>
+
+  <div class="card">
+    <img src="/assets/pagos-seguros.png" alt="Silueta de manos con bolsa de dinero con fondo amarillo" class="cards-illustrations">
+    <h5 class="card-title"><strong>Pagos seguros</strong></h5>
+    <p class="card-text">Todos los pagos se realizan por pasarelas seguras.</p>
+  </div>
+
+  <div class="card">
+    <img src="/assets/formacion-calidad.png" alt="Silueta de manos con bolsa de dinero con fondo amarillo" class="cards-illustrations">
+    <h5 class="card-title"><strong>Formación de calidad</strong></h5>
+    <p class="card-text">Cada asesoría se valora recíprocamente por la comunidad.</p>
+  </div>
+</main>
+</section>
 
 
-
-
-      <!--footer-->
-      <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-          <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none" aria-label="Bootstrap">
-              <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <p class="text-body-secondary">&copy; 2025</p>
-          </div>
+<!-- footer -->
+ <div class="container">
+  <footer class=" pt-5">
+    <div class="footer row">
       
-          <div class="col mb-3">
-          </div>
 
-          <div class="col mb-3">
-            <h5>LEGAL</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Condiciones de uso</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Politica de privacidad</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Politica de cookies</a></li>
-            </ul>
-          </div>
-      
-          <div class="col mb-3">
-            <h5>SOPORTE</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Preguntas frecuentes</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contactar</a></li>
-            </ul>
-          </div>
-        </footer>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>LEGAL</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="#" class="footer-text p-0 ms-0">Condiciones de uso</a></li>
+          <li class="nav-item"><a href="#" class="footer-text p-0 ms-0"> Política de privacidad</a></li>
+          <li class=" nav-item mb-2"><a href="#" class="footer-text p-0 ms-0"> Política de cookies</a></li>
+        </ul>
       </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>SOPORTE</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="#" class=" footer-text p-0 ms-0">Preguntas frecuentes</a></li>
+          <li class=" nav-item mb-2"><a href="#" class="footer-text p-0 ms-0">Contactar</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between  ">
+      <p>&copy; 2025 Orange. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</div>
 
 
     <!--acceso a Bootstrap-->
