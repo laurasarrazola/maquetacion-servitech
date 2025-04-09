@@ -1,0 +1,264 @@
+/*se usa para agrupar los estilos de componentes reutilizables del sitio, como botones, cabeceras, tarjetas, formularios, etc.
+
+Su función principal es mantener el código organizado y escalable, permitiendo que cada bloque funcional tenga sus propios estilos separados de la base general. Facilita el mantenimiento, la reutilización y la lectura del CSS.*/
+
+/*COMPONENTES DEL HEADER*/
+.header {
+  background-color: var(--negro);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.header__nav-list .header__nav-link {
+  color: var(--blanco);
+  text-align: center;
+}
+
+.nav-link {
+  margin: 0 1rem;
+  font-size: var(--tam-texto-regular);
+  text-align: center;
+}
+
+.header__nav-link {
+  padding: 0;
+}
+
+.header__nav-link:hover {
+  background-color: #b0b3c550;
+  border-radius: 15%;
+}
+
+.header__nav-link:active {
+  color: var(--azul-claro);
+}
+
+.navbar-collapse.show .header__nav-link {
+  font-family: var(--fuente-subtitulo);
+  font-size: var(--tam-subtitulo);
+  font-weight: var(--peso-subtitulo);
+}
+
+/*COMPONENTES DE BOTONES*/
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: var(--tam-texto-regular);
+  font-weight: var(--peso-subtitulo);
+  min-height: 50px;
+}
+
+.btn--cta {
+  background-color: var(--bg-cta-btn);
+  color: var(--color-cta-btn);
+  border: var(--b-cta-btn);
+  border-radius: var(--br-cta-btn);
+  padding: var(--p-cta-btn);
+  font-family: var(--ff-cta-btn);
+  font-size: var(--fs-cta-btn);
+  font-weight: var(--fw-cta-btn);
+  cursor: var(--cursor-cta-btn);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--cta:hover {
+  background-color: #d0b000;
+}
+
+.btn--secondary {
+  background-color: var(--bg-sec-btn);
+  color: var(--color-sec-btn);
+  border: var(--b-sec-btn);
+  border-radius: var(--br-sec-btn);
+  padding: var(--p-sec-btn);
+  font-family: var(--ff-sec-btn);
+  font-size: var(--fs-sec-btn);
+  font-weight: var(--fw-sec-btn);
+  cursor: var(--cursor-sec-btn);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--secondary:hover {
+  background-color: #00ace6;
+}
+
+/*COMPONENTES HERO IMAGE INICIO*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(/assets/Fondo-pagina-principal-redes.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  max-width: 100%;
+  height: 91vh;
+  border-bottom: solid 6vh var(--amarillo);
+}
+
+.hero__title {
+  color: var(--blanco);
+  font-family: var(--fuente-titulo-grande);
+  font-size: var(--tam-titulo-grande);
+  font-weight: var(--peso-titulo-grande);
+  margin: 1em 3em 1em 3em;
+}
+
+.hero__roles{
+  display: flex;
+  gap: 1.25em;
+  color: var(--blanco);
+  font-family: var(--fuente-subtitulo);
+  font-size: var(--tam-subtitulo);
+  font-weight: var(--peso-subtitulo);
+}
+
+.hero__description {
+  margin: 1em 2em 1em 2em;
+}
+
+/*COMPONENTES CARTAS EN GENERAL*/
+.card {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--blanco);
+}
+
+
+/*COMPONENTES CARDS TEMÁTICAS*/
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--blanco);
+  padding: 0;
+}
+
+.topics__cards {
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.topics__card {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.topics__title {
+  font-family: var(--fuente-subtitulo);
+  font-size: var(--tam-subtitulo);
+  font-weight: var(--peso-subtitulo);
+}
+
+
+.topics__item {
+  font-family: var(--fuente-texto-descriptivo);
+  font-size: var(--tam-texto-descriptivo);
+  font-weight: var(--peso-texto-descriptivo);
+  list-style: none;
+}
+
+.topics__list {
+  padding: 0;
+}
+
+/*COMPONENTE LOGO Y MENSAJE*/
+.landing__logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 40vh;
+  padding: 1rem;
+}
+
+.landing__logo-img {
+  max-width: 320px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.landing__logo-section h3 {
+  font-family: var(--fuente-titulo-grande);
+  font-weight: var(--peso-titulo-grande);
+  font-size: var(--tam-titulo-grande);
+}
+
+/*COMPONENTE CARTAS BENEFICIOS*/
+.benefits__card-title {
+  font-family: var(--fuente-subtitulo);
+  font-size: var(--tam-subtitulo);
+  font-weight: var(--peso-subtitulo);
+  text-align: center;
+}
+
+.benefits__card-text {
+  font-family: var(--fuente-texto-regular);
+  font-size: var(--tam-texto-regular);
+  font-weight: var(--peso-texto-regular);
+}
+
+.benefits__cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1300px; 
+  margin: 0 auto;
+  padding: 2em 2em 5em 2em;
+  border-bottom: solid 0.09em var(--blanco);
+}
+
+.benefits__card-img {
+  margin: 1em;
+}
+
+/*COMPONENTES DEL FOOTER*/
+.footer {
+    font-family: var(--fuente-texto-descriptivo);
+    font-size: var(--tam-texto-descriptivo);
+    font-weight: var(--peso-texto-descriptivo);
+    padding-left: 2.5em;
+  }
+
+.footer__content{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.footer__link {
+  color: var(--blanco)
+}
+
+
+
+
+
+
+
+

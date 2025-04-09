@@ -1,0 +1,233 @@
+/*aplican cuando el ancho de la pantalla es menor o igual a 575.98 píxeles.*/
+@media (max-width: 575.98px) {
+  .btn {
+    font-size: var(--tam-texto-descriptivo);
+  }
+
+  .logo__image {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header__actions {
+    flex-direction: column;
+  }
+
+  .navbar-collapse.show .header__nav-link {
+    font-family: var(--fuente-subtitulo);
+    font-size: var(--tam-texto-regular);
+    font-weight: var(--peso-subtitulo);
+    padding: 0;
+  }
+
+  .hero__title {
+    font-size: var(--tam-texto-regular);
+    font-weight: var(--peso-subtitulo);
+    margin: 1em;
+  }
+
+  .hero__roles {
+    flex-direction: column;
+    font-size: var(--tam-texto-descriptivo);
+  }
+
+  .nav-link {
+    margin: 0.5em 0;
+  }
+
+  .topics__card {
+    width: 100%;
+  }
+
+  .benefits__card-title {
+    font-family: var(--fuente-texto-regular);
+    font-size: var(--tam-texto-regular);
+    font-weight: var(--peso-texto-regular);
+  }
+
+  .benefits__card-text {
+    font-family: var(--fuente-texto-descriptivo);
+    font-size: var(--tam-texto-descriptivo);
+    font-weight: var(--peso-texto-descriptivo);
+  }
+
+  .landing__logo-section h3 {
+    font-family: var(--fuente-titulo-grande);
+    font-size: var(--tam-subtitulo);
+    font-weight: var(--peso-subtitulo);
+  }
+
+  .footer {
+    font-size: 0.8em;
+  }
+}
+
+/* aplican cuando el ancho de la pantalla está entre 576px y 767.98px*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logo__image {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero__title {
+    font-size: var(--tam-subtitulo);
+    font-weight: var(--peso-subtitulo);
+  }
+
+  .hero__roles {
+    font-size: var(--tam-texto-descriptivo);
+  }
+
+  .header__nav-item:nth-child(3) .header__nav-link {
+    margin-bottom: 0.5em;
+  }
+
+  .topics__card {
+    width: 100%;
+  }
+
+  .benefits__card-title {
+    font-family: var(--fuente-texto-regular);
+    font-size: var(--tam-texto-regular);
+    font-weight: var(--peso-texto-regular);
+  }
+
+  .benefits__card-text {
+    font-family: var(--fuente-texto-descriptivo);
+    font-size: var(--tam-texto-descriptivo);
+    font-weight: var(--peso-texto-descriptivo);
+  }
+
+  .landing__logo-section h3 {
+    font-size: var(--tam-titulo);
+    font-weight: var(--peso-titulo);
+  }
+}
+
+/*aplican cuando el ancho de la pantalla está entre 768px y 991.98px. */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero__title {
+    font-size: var(--tam-titulo);
+  }
+
+  .hero__roles {
+    font-size: var(--tam-texto-regular);
+  }
+
+  .header__nav-item:nth-child(3) .header__nav-link {
+    margin-bottom: 0.5em;
+  }
+
+  .topics__card {
+    width: 100%;
+  }
+
+  .topics__title {
+    font-family: var(--fuente-titulo);
+    font-size: var(--tam-titulo);
+    font-weight: var(--peso-titulo);
+  }
+
+  .topics__item {
+    font-family: var(--fuente-texto-regular);
+    font-size: var(--tam-texto-regular);
+    font-weight: var(--peso-texto-regular);
+    list-style: none;
+  }
+
+  .benefits__card-title {
+    font-family: var(--fuente-texto-regular);
+    font-size: var(--tam-texto-regular);
+    font-weight: var(--peso-texto-regular);
+  }
+
+  .benefits__card-text {
+    font-family: var(--fuente-texto-descriptivo);
+    font-size: var(--tam-texto-descriptivo);
+    font-weight: var(--peso-texto-descriptivo);
+  }
+}
+
+/*aplican cuando el ancho de la pantalla está entre 992px y 1199.98px. */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header__nav-link {
+    margin: 0 1.25rem;
+    font-family: var(--fuente-subtitulo);
+    font-size: var(--tam-subtitulo);
+    font-weight: var(--peso-subtitulo);
+  }
+
+  .hero__title {
+    font-size: var(--tam-titulo);
+  }
+
+  .nav-link {
+    margin: 0 1rem;
+    font-size: var(--tam-subtitulo);
+  }
+
+  .topics__card {
+    flex: 1 1 calc(50% - 1rem); /* permite crecer o reducirse con base en ese 50% ajustado.*/
+    max-width: calc(
+      50% - 1rem
+    ); /* limita su tamaño máximo para que no se desborde.*/
+  }
+
+  .topics__item {
+    font-family: var(--fuente-texto-regular);
+    font-size: var(--tam-texto-regular);
+    font-weight: var(--peso-texto-regular);
+    list-style: none;
+  }
+
+  .topics__title {
+    font-family: var(--fuente-subtitulo);
+    font-size: var(--tam-subtitulo);
+    font-weight: var(--peso-subtitulo);
+  }
+}
+
+/* xl: ≥1200px */
+@media (min-width: 1200px) {
+  .header__nav-link {
+    margin: 0 1.25rem;
+    font-family: var(--fuente-subtitulo);
+    font-size: var(--tam-subtitulo);
+    font-weight: var(--peso-subtitulo);
+  }
+
+  .hero__roles {
+    font-size: var(--tam-subtitulo);
+  }
+
+  .topics__card {
+    flex: 1 1 calc(25% - 1.5rem); /*Cada tarjeta toma el 25% del ancho total, menos un margen de 1.5rem (esto ayuda a que quepan 4 por fila, considerando los espacios entre ellas).*/
+    max-width: calc(
+      25% - 1.5rem
+    ); /*flex permite ajustar su tamaño y max-width impone el límite superior.*/
+  }
+
+  .topics__title {
+    font-family: var(--fuente-subtitulo);
+    font-size: var(--tam-subtitulo);
+    font-weight: var(--peso-subtitulo);
+  }
+
+  .topics__item {
+    font-family: var(--fuente-texto-regular);
+    font-size: var(--tam-texto-regular);
+    font-weight: var(--peso-texto-regular);
+    list-style: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--negro);
+    color: var(--blanco);
+  }
+}
