@@ -99,6 +99,7 @@ Su función principal es mantener el código organizado y escalable, permitiendo
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
   background-image: url(/assets/Fondo-pagina-principal-redes.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -128,6 +129,19 @@ Su función principal es mantener el código organizado y escalable, permitiendo
 
 .hero__description {
   margin: 1em 2em 1em 2em;
+}
+
+.hero__logo-image{
+  display: flex;
+  justify-content: center;
+  width: 100%;     
+  height: auto;  
+}
+
+.hero__logo-image img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 /*COMPONENTES CARTAS EN GENERAL*/
@@ -263,7 +277,7 @@ Su función principal es mantener el código organizado y escalable, permitiendo
  background-image: url(/assets/fondo-modales.png);
 }
 
-.modal-header h1{
+.modal__form-container h1{
   color: var(--amarillo);
   font-family: var(--tam-titulo-grande);
   font-size: var(--tam-titulo-grande);
@@ -280,15 +294,24 @@ Su función principal es mantener el código organizado y escalable, permitiendo
 
 .modal-content {
   display: flex;
+  flex-direction: column;
   background-color: black;
   color: var(--blanco);
+  min-height: 600px; 
 }
+
+.modal-content .row {
+  flex: 1;
+  height: 100%;
+}
+
 
 .modal__close-container{
   display: flex;
   justify-content: end;
   padding-top: 1rem;
   padding: 0;
+  color: var(--blanco);
 }
 
 .btn-close{
@@ -330,7 +353,7 @@ Su función principal es mantener el código organizado y escalable, permitiendo
   font-size: var(--tam-texto-descriptivo);
 }
 
-.form-login__buttons{
+.form-login__buttons, .form-signup__buttons{
   display: flex;
   justify-content: center;
 }
@@ -344,6 +367,21 @@ Su función principal es mantener el código organizado y escalable, permitiendo
 .btn-outline-primary:hover{
   background-color: var(--azul-oscuro);
 }
+
+.signup__info-text{
+font-family: var(--fuente-titulo);
+font-size: var(--tam-subtitulo);
+font-weight: var(--peso-titulo);
+line-height: 1em;
+}
+
+.modal__form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
 
 
 
