@@ -117,7 +117,7 @@ Su función principal es mantener el código organizado y escalable, permitiendo
   margin: 1em 3em 1em 3em;
 }
 
-.hero__roles{
+.hero__roles {
   display: flex;
   gap: 1.25em;
   color: var(--blanco);
@@ -143,7 +143,6 @@ Su función principal es mantener el código organizado y escalable, permitiendo
   background-color: var(--blanco);
 }
 
-
 /*COMPONENTES CARDS TEMÁTICAS*/
 .card-body {
   display: flex;
@@ -156,7 +155,7 @@ Su función principal es mantener el código organizado y escalable, permitiendo
 }
 
 .topics__cards {
-display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
@@ -172,7 +171,6 @@ display: flex;
   font-size: var(--tam-subtitulo);
   font-weight: var(--peso-subtitulo);
 }
-
 
 .topics__item {
   font-family: var(--fuente-texto-descriptivo);
@@ -222,12 +220,12 @@ display: flex;
   font-weight: var(--peso-texto-regular);
 }
 
-.benefits__cards-container{
+.benefits__cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  max-width: 1300px; 
+  max-width: 1300px;
   margin: 0 auto;
   padding: 2em 2em 5em 2em;
   border-bottom: solid 0.09em var(--blanco);
@@ -239,26 +237,113 @@ display: flex;
 
 /*COMPONENTES DEL FOOTER*/
 .footer {
-    font-family: var(--fuente-texto-descriptivo);
-    font-size: var(--tam-texto-descriptivo);
-    font-weight: var(--peso-texto-descriptivo);
-    padding-left: 2.5em;
-  }
+  font-family: var(--fuente-texto-descriptivo);
+  font-size: var(--tam-texto-descriptivo);
+  font-weight: var(--peso-texto-descriptivo);
+  padding-left: 2.5em;
+}
 
-.footer__content{
+.footer__content {
   display: flex;
   align-items: start;
   justify-content: center;
 }
 
 .footer__link {
-  color: var(--blanco)
+  color: var(--blanco);
 }
 
+/*COMPONENTES MODAL*/
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
 
+.modal {
+ background-image: url(/assets/fondo-modales.png);
+}
 
+.modal-header h1{
+  color: var(--amarillo);
+  font-family: var(--tam-titulo-grande);
+  font-size: var(--tam-titulo-grande);
+  font-weight: var(--peso-titulo-grande) ;
+}
 
+.modal__description{
+  font-family: var(--tam-subtitulo);
+  font-size: var(--tam-texto-regular);
+  font-weight: var(--peso-subtitulo) ;
+  line-height: 1.2em;
+  margin-bottom: 0;
+}
 
+.modal-content {
+  display: flex;
+  background-color: black;
+  color: var(--blanco);
+}
+
+.modal__close-container{
+  display: flex;
+  justify-content: end;
+  padding-top: 1rem;
+  padding: 0;
+}
+
+.btn-close{
+  display: flex;
+  color: var(--blanco);
+  font-size: var(--tam-texto-regular);
+
+}
+
+.form-control {
+  background-color: #1a1a1a;
+  color: var(--blanco);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* opcional, para el texto del placeholder */
+}
+
+.form-floating > label {
+  color: var(--blanco);
+}
+
+.modal-header, .modal-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__title,
+.modal__description {
+  text-align: center;
+}
+
+.form-login__actions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fuente-texto-descriptivo);
+  font-weight: var(--peso-texto-descriptivo);
+  font-size: var(--tam-texto-descriptivo);
+}
+
+.form-login__buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.form-login__social-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-outline-primary:hover{
+  background-color: var(--azul-oscuro);
+}
 
 
 
