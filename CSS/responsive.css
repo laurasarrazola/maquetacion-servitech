@@ -1,6 +1,6 @@
 /*aplican cuando el ancho de la pantalla es menor o igual a 575.98 píxeles.*/
 @media (max-width: 575.98px) {
-  .btn {
+  .btn--cta, .btn--secondary, .btn--primary {
     font-size: var(--tam-texto-descriptivo);
   }
 

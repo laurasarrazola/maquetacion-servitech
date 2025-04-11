@@ -36,22 +36,36 @@
   /*Boton CTA*/
   --bg-cta-btn: var(--amarillo);
   --color-cta-btn: var(--negro);
-  --b-cta-btn: var(--amarillo);
-  --br-cta-btn: 1.5em;
-  --p-cta-btn: 0.5em 1.5em;
+  --b-cta-btn: 0.063em;
+  --br-cta-btn: 0.4rem;
+  --p-cta-btn: 0.5em 0.75em;
   --ff-cta-btn: var(--fuente-texto-regular);
-  --fs-cta-btn: var(--tam-texto-regular);
-  --fw-cta-btn: var(--peso-subtitulo);
+  --fs-cta-btn: var(--tam-texto-descriptivo);
+  --fw-cta-btn: var(--peso-texto-regular);
   --cursor-cta-btn: pointer;
+  --transition-cta-btn: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+
+/*Boton color primario*/
+  --bg-prim-btn: transparent;
+  --color-prim-btn: var(--azul-oscuro);
+  --b-prim-btn: 0.063em;
+  --br-prim-btn: 0.4rem;
+  --p-prim-btn: 0.5em 0.75em;
+  --ff-prim-btn: var(--fuente-texto-regular);
+  --fs-prim-btn: var(--tam-texto-descriptivo);
+  --fw-prim-btn: var(--peso-texto-regular);
+  --cursor-prim-btn: pointer;
+  --transition-prim-btn: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
 
   /*Botón color secundario*/
   --bg-sec-btn: var(--azul-claro);
   --color-sec-btn: var(--negro);
-  --b-sec-btn: var(--amarillo);
-  --br-sec-btn: 1.5em;
-  --p-sec-btn: 0.5em 1.5em;
+  --b-sec-btn: 0.063em;
+  --br-sec-btn: 0.4rem;
+  --p-sec-btn: 0.5em 0.75em;
   --ff-sec-btn: var(--fuente-texto-regular);
-  --fs-sec-btn: var(--tam-texto-regular);
-  --fw-sec-btn: var(--peso-subtitulo);
+  --fs-sec-btn: var(--tam-texto-descriptivo);
+  --fw-sec-btn: var(--peso-texto-regular);
   --cursor-sec-btn: pointer;
+  --transition-cta-btn: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
 }

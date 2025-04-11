@@ -1,7 +1,6 @@
 /*define los estilos globales del sitio: tipografías, colores de fondo, comportamiento del scroll, y ajustes generales para etiquetas como body, html, h1, p, a, etc. Sirve como base visual y funcional sobre la que se construye el resto del diseño.*/
 
 html {
-  background-color: var(--negro);
   scroll-behavior: smooth;
 }
 

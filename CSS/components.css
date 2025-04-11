@@ -4,16 +4,17 @@ Su función principal es mantener el código organizado y escalable, permitiendo
 
 /*COMPONENTES DEL HEADER*/
 .header {
-  background-color: var(--negro);
+  background-color: var(--negro) ;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 2000;
 }
 
 .logo__image {
   max-width: 100%;
   height: auto;
 }
+
 
 .header__nav-list .header__nav-link {
   color: var(--blanco);
@@ -46,17 +47,11 @@ Su función principal es mantener el código organizado y escalable, permitiendo
 }
 
 /*COMPONENTES DE BOTONES*/
-.btn {
-  padding: 0.5rem 1rem;
-  font-size: var(--tam-texto-regular);
-  font-weight: var(--peso-subtitulo);
-  min-height: 50px;
-}
-
+/*Botón CTA*/
 .btn--cta {
   background-color: var(--bg-cta-btn);
   color: var(--color-cta-btn);
-  border: var(--b-cta-btn);
+  border: solid var(--b-cta-btn) var(--color-cta-btn);
   border-radius: var(--br-cta-btn);
   padding: var(--p-cta-btn);
   font-family: var(--ff-cta-btn);
@@ -69,13 +64,57 @@ Su función principal es mantener el código organizado y escalable, permitiendo
   justify-content: center;
 }
 .btn--cta:hover {
-  background-color: #d0b000;
+  color: var(--negro);
+  background-color:rgba(231, 196, 0, 0.9); 
+  border-color: var(--amarillo);
 }
 
+.btn--cta:active,
+.btn--cta.active,
+.show > .btn--cta.dropdown-toggle {
+  color: var(--negro);
+  background-color: rgba(231, 196, 0, 0.5); 
+  border-color:  rgba(231, 196, 0, 0.4); 
+}
+
+/*Botón primario*/
+.btn--primary {
+  background-color: transparent;
+  color: rgb(0, 191, 255);
+  border: solid var(--b-prim-btn) rgb(0, 191, 255);
+  border-radius: var(--br-prim-btn);
+  padding: var(--p-prim-btn);
+  font-family: var(--ff-prim-btn);
+  font-size: var(--fs-prim-btn);
+  font-weight: var(--fw-prim-btn);
+  cursor: var(--cursor-prim-btn);
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--primary:hover {
+  color: var(--blanco);
+  background-color:rgba(0, 143, 191, 0.7); 
+  border-color: var(--azul-claro);
+}
+
+.btn--primary:active,
+.btn--primary.active,
+.show > .btn--primary.dropdown-toggle {
+  color: var(--negro);
+  background-color: var(--azul-claro); 
+  border-color: var(--azul-claro); 
+}
+
+/*Botón secundaria*/
 .btn--secondary {
   background-color: var(--bg-sec-btn);
   color: var(--color-sec-btn);
-  border: var(--b-sec-btn);
+  border: solid var(--b-sec-btn) var(--color-sec-btn);
   border-radius: var(--br-sec-btn);
   padding: var(--p-sec-btn);
   font-family: var(--ff-sec-btn);
@@ -89,8 +128,19 @@ Su función principal es mantener el código organizado y escalable, permitiendo
 }
 
 .btn--secondary:hover {
-  background-color: #00ace6;
+  color: var(--negro);
+  background-color:rgba(0, 191, 255, 0.9); 
+  border-color: var(--azul-claro);
 }
+
+.btn--secondary:active,
+.btn--secondary.active,
+.show > .btn--secondary.dropdown-toggle {
+  color: var(--negro);
+  background-color: rgba(0, 191, 255, 0.5); 
+  border-color:  rgba(0, 191, 255, 0.4); 
+}
+
 
 /*COMPONENTES HERO IMAGE INICIO*/
 .hero {
@@ -364,10 +414,6 @@ Su función principal es mantener el código organizado y escalable, permitiendo
   align-items: center;
 }
 
-.btn-outline-primary:hover{
-  background-color: var(--azul-oscuro);
-}
-
 .signup__info-text{
 font-family: var(--fuente-titulo);
 font-size: var(--tam-subtitulo);
@@ -382,6 +428,9 @@ line-height: 1em;
   height: 100%;
 }
 
+.profile-icon{
+  color:white
+}
 
-
+/*PAGINA FEED*/
 
