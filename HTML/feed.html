@@ -100,45 +100,31 @@
       </nav>
     </header>
 
-  
-<!-- Contenido del feed-->
-<main class="container-fluid d-flex" style="width: 80%; margin: 0 auto;">
-      
-  <!-- aside izquierdo -->
-      <aside class="sidebar col-2 d-flex flex-column justify-content-between vh-100 sticky-top pt-3">
-        
+    <!-- Contenido del feed-->
+    <main class="container-fluid d-flex" style="width: 80%; margin: 0 auto">
+      <!-- aside izquierdo -->
+      <aside
+        class="sidebar col-2 d-flex flex-column justify-content-between vh-100 sticky-top pt-3"
+      >
         <!-- Botones iniciales -->
-        <section class="sidebar__nav mb-4">  
-          <button class="btn--primary w-100 mb-2 rounded-3"> <i class="bi bi-house me-1"></i> Principal</button>
+        <section class="sidebar__nav mb-4">
+          <button class="btn--primary w-100 mb-2 rounded-3">
+            <i class="bi bi-house me-1"></i> Principal
+          </button>
 
-          <button class="btn--primary w-100">  <i class="bi bi-star me-1"></i> Expertos verificados</button>
+          <button class="btn--primary w-100">
+            <i class="bi bi-star me-1"></i> Expertos verificados
+          </button>
         </section>
 
         <section class="sidebar__topic mb-4">
           <div class="sidebar__title">
-          <h5> <a href="">Front-End</a></h5>
+            <h5><a href="#">Front-End</a></h5>
           </div>
-          <div class="sidebar__topics-group overflow-auto mb-3" style="max-height: 100px;">
-            
-            <ul class="list-unstyled">
-              <li>Subtema 1</li>
-              <li>Subtema 2</li>
-              <li>Subtema 3</li>
-              <li>Subtema 4</li>
-              <li>Subtema 5</li>
-              <li>Subtema 6</li>
-              <li>Subtema 7</li>
-              <li>Subtema 8</li>
-              <li>Subtema 9</li>
-              <li>Subtema 10</li>
-            </ul>
-        
-          </div>
-
-          <div class="sidebar__title">
-            <h6><a href="">Lenguajes de Programación</a></h6>
-          </div>
-          <div class="sidebar__topics-group overflow-auto mb-3" style="max-height: 100px;">
+          <div
+            class="sidebar__topics-group overflow-auto mb-3"
+            style="max-height: 100px"
+          >
             <ul class="list-unstyled">
               <li>Subtema 1</li>
               <li>Subtema 2</li>
@@ -154,9 +140,12 @@
           </div>
 
           <div class="sidebar__title">
-          <h6><a href="">Desarrollo Back-End</a></h6>
+            <h5><a href="">Lenguajes de Programación</a></h5>
           </div>
-          <div class="sidebar__topics-group overflow-auto mb-3" style="max-height: 100px;">
+          <div
+            class="sidebar__topics-group overflow-auto mb-3"
+            style="max-height: 100px"
+          >
             <ul class="list-unstyled">
               <li>Subtema 1</li>
               <li>Subtema 2</li>
@@ -172,9 +161,33 @@
           </div>
 
           <div class="sidebar__title">
-            <h6><a href="">Frameworks</a></h6>
+            <h5><a href="">Desarrollo Back-End</a></h5>
           </div>
-          <div class="sidebar__topics-group overflow-auto mb-3" style="max-height: 100px;">
+          <div
+            class="sidebar__topics-group overflow-auto mb-3"
+            style="max-height: 100px"
+          >
+            <ul class="list-unstyled">
+              <li>Subtema 1</li>
+              <li>Subtema 2</li>
+              <li>Subtema 3</li>
+              <li>Subtema 4</li>
+              <li>Subtema 5</li>
+              <li>Subtema 6</li>
+              <li>Subtema 7</li>
+              <li>Subtema 8</li>
+              <li>Subtema 9</li>
+              <li>Subtema 10</li>
+            </ul>
+          </div>
+
+          <div class="sidebar__title">
+            <h5><a href="">Frameworks</a></h5>
+          </div>
+          <div
+            class="sidebar__topics-group overflow-auto mb-3"
+            style="max-height: 100px"
+          >
             <ul class="list-unstyled">
               <li>Subtema 1</li>
               <li>Subtema 2</li>
@@ -198,6 +211,116 @@
           <button class="btn btn-link d-block w-100 text-start">Acuerdos del usuario</button>
         </section> -->
       </aside>
+
+      <!-- Sección derecha -->
+      <section class="feed col-10 p-4">
+        <!-- filtros de búsqueda -->
+        <section
+          class="feed__filters border border-warning p-3 rounded-3 mx-5 mb-4"
+        >
+          <h2>Encuentra tu experto</h2>
+
+          <form>
+            <div class="row g-3 form-floating mb-2">
+              <div class="col-md-6 form-floating mb-1">
+                <input
+                  type="text"
+                  class="form-control rounded-3"
+                  placeholder="Buscar por nombre"
+                />
+                <label for="floatingInput">Buscar por nombre</label>
+              </div>
+
+              <div class="col-md-6 form-floating mb-1">
+                <select class="form-select bg-dark text-white">
+                  <option>Subtema 1</option>
+                  <option>Subtema 2</option>
+                  <option>Subtema 3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row g-3 form-floating mb-2">
+              <div class="col-md-6 form-floating mb-1">
+                <input type="date" class="form-control" />
+              </div>
+
+              <div class="col-md-6 form-floating mb-1">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Buscar por precio/hora"
+                />
+                <label for="floatingInput">Buscar por precio/hora</label>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn--primary">Buscar</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- ona para crear una publicación -->
+        <section class="feed__new-post mx-3 mb-5">
+          <h2>Haz una publicación</h2>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Tema</label>
+              <select class="form-select bg-dark text-white">
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Título</label>
+              <input type="text" class="form-control bg-dark text-white" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Contenido</label>
+              <textarea
+                class="form-control bg-dark text-white"
+                maxlength="1000"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn--primary">Publicar</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- publicaciones -->
+        <section class="feed__allposts m-0">
+          <div class="feed__post--content by-4">
+          <article class="feed__post card w-100 pb-5">
+            <div
+              class="feed__post--userinfo d-flex justify-content-between w-100"
+            >
+              <h5><i class="bi bi-person-fill"></i> Usuario</h5>
+              <p>Hace 2h</p>
+            </div>
+
+            <div class="d-flex justify-content-around w-100">
+              <h6 class="card-title pb-3">Título de la publicación</h6>
+              <h6>Tema</h6>
+            </div>
+
+            <p class="card-text">
+              Este es el contenido de la publicación... Lorem ipsum, dolor sit
+              amet consectetur adipisicing elit. Magnam quasi, quibusdam quas,
+              fugiat labore porro cupiditate earum consequuntur optio quam
+              repellat autem, excepturi doloribus! Est veniam nisi officia nihil
+              dolorum!
+            </p>
+
+            <div class="d-flex justify-content-start gap-2">
+              <button class="btn--secondary">Comentar</button>
+              <button class="btn--cta">Negociar</button>
+            </div>
+          </article>
+          </div>
+          <!-- Más publicaciones -->
+          
         </section>
       </section>
     </main>
